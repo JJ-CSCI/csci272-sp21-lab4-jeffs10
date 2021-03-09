@@ -8,9 +8,24 @@ using Catch::Matchers::Equals;
 
 // Fix the following class
 class Complex {
+  private: 
+    int real, imaginary;
+
+  public: 
+    Complex(int real=0, int imaginary=0);
+    int im();
+    int re();
+};
+  int main ();
     void operator>>(std::string&) const;
     void operator<<(const std::string&);
 };
+
+
+
+
+
+
 
 //------------------------------
 //   DO NOT MODIFY TEST CASES
